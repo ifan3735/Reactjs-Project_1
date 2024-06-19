@@ -7,7 +7,7 @@ import ProfileCard from './ProfileCard';
 function App() {
   const users = [
     {
-      name: 'Ifan Maina',
+      name: 'Ifan Xavier',
       age: 19,
       profilePicture: 'https://i.pinimg.com/236x/06/cf/8d/06cf8d3dd0600b35fb36005fe8104250.jpg',
       bio: 'Software developer and technology enthusiast.'
