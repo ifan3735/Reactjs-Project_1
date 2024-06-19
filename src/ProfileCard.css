@@ -1,0 +1,114 @@
+/* src/ProfileCard.css */
+
+/* Container for the profile card */
+.profile-card {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 320px;
+    margin: 24px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hover effect for the profile card */
+  .profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container for the profile image */
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 5px solid #0b0983;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect for the profile image */
+  .profile-image:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* Profile name styling */
+  .profile-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #343a40;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile age styling */
+  .profile-age {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+  }
+  
+  /* Profile bio styling */
+  .profile-bio {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 16px;
+  }
+  
+  /* Gradient overlay */
+  .profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+  }
+  
+  /* Hover effect for gradient overlay */
+  .profile-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Subtle background pattern */
+  .profile-card {
+    background: repeating-linear-gradient(
+      45deg,
+      #f8f9fa,
+      #f8f9fa 10px,
+      #e9ecef 10px,
+      #e9ecef 20px
+    );
+  }
+  
+  /* Button for social media or actions */
+  .profile-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
